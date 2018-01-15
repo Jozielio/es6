@@ -6,8 +6,8 @@ const path = require('path');
 const emptyMessage = new Message();
 const emptyPhotoMessage = new ImageMessage();
 
-console.log(emptyMessage);
-console.log(emptyPhotoMessage);
+// console.log(emptyMessage);
+// console.log(emptyPhotoMessage);
 
 class MessagesService {
   constructor() {
@@ -23,18 +23,17 @@ class MessagesService {
         rejectPromise(err);
       } else {
         const dataArray = JSON.parse(data);
-        const dataObj = dataArray.map((item) => {
-          new Message(item.text, item.created);
-        })
+        const dataObj = dataArray.map(item =>
+          new Message(item.text, item.created));
         resolvePromise(dataObj);
       }
-    })
+    });
   }
 
   get messages() {
     return this.messagePromise;
-  };
-};
+  }
+}
 
 const messageService = new MessagesService();
 messageService.messages.then((messages) => {

@@ -1,13 +1,3 @@
 {
-    "extends": "airbnb-base",
-    "plugins": [
-        "import"
-    ],
-    "rules": {
-        "no-underscore-dangle": 0,
-        "no-console": 0,
-        "max-len": [
-            "error", 80
-        ]
-    }
+    "extends": "airbnb-base"
 }
