@@ -60,8 +60,8 @@
     "style-loader": "^0.13.1",
     "tslint": "^4.5.1",
     "typescript": "^2.2.1",
-    "uglifyjs": "^2.4.10",
-    "uglifyjs-webpack-plugin": "^0.2.1",
+    "uglifyjs": "^2.4.11",
+    "uglifyjs-webpack-plugin": "^1.1.6",
     "url-loader": "^0.5.7",
     "webpack": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",
@@ -69,7 +69,7 @@
   },
   "dependencies": {
     "moment": "^2.17.1",
-    "ts-promise": "^0.3.4",
+    "ts-promise": "^1.0.0",
     "whatwg-fetch": "^2.0.3"
   }
 }
